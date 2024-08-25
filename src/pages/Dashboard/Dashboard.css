@@ -1,78 +1,68 @@
 /* Dashboard.css */
 .dashboard {
-    background-color: #fff;  /* Gray background for the dashboard */
-    min-height: 100vh;  /* Ensure the dashboard takes up the full viewport height */
+    background-color: #fff; /* Gray background for the dashboard */
+    min-height: 100vh; /* Ensure the dashboard takes up the full viewport height */
     padding: 20px;
     display: flex;
     justify-content: center;
-  }
-  
-  .dashboard-container {
+}
+
+.dashboard-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;  /* Ensure the container doesn’t stretch too wide */
-    flex-wrap: wrap;  /* Allow wrapping to the next line on smaller screens */
-  }
-  
-  /* Card1 container */
-  .card1-container {
-    flex: 2;  /* Slightly larger to make Card1 wider */
-    margin-right: 10px;  /* Space between Card1 and Card2 */
-  }
-  
-  /* Card2 container */
-  .card2-container {
-    flex: 1;  /* Same size as Card3 */
-    margin-right: 10px;  /* Space between Card2 and Card3 */
-  }
-  
-  /* Card3 container */
-  .card3-container {
-    flex: 1;  /* Same size as Card2 */
-  }
-  
-  /* Ensure all cards have the same height */
-  .card1-container .card, 
-  .card2-container .card, 
-  .card3-container .card {
+    max-width: 1200px; /* Ensure the container doesn’t stretch too wide */
+    flex-wrap: wrap; /* Allow wrapping to the next line on smaller screens */
+}
+
+.dashboard-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card1-container,
+.card2-container,
+.card3-container {
+    width: 100%;
+    margin: 10px;
+}
+
+/* Ensure all cards have the same height */
+.card1-container .card,
+.card2-container .card,
+.card3-container .card {
     height: 100%;
     width: 100%;
-  }
-  .chart-container{
+}
+
+.chart-container {
     display: flex;
     width: 100%;
-    height: 35%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  
-  }
-  .opportunit-chart-container {
+}
 
-
+.opportunit-chart-container {
     width: 100%;
-    height: 100%;
+    min-height: 450px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #E8E8E8;
     justify-content: center;
+    align-content: center;
 
-  }
-  
-  .basic-line-chart-container{
+}
+
+.basic-line-chart-container {
     width: 100%;
-    height: 100%;
-
+    min-height: 450px;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  .dashboard-card-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 50vw;
-    flex-wrap: wrap;
-  }
+    border: 1px solid #E8E8E8;
+    justify-content: center;
+    align-content: center;
+}

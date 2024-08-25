@@ -12,12 +12,15 @@ const StyledPaper = styled(Paper)({
   alignItems: 'center',
   padding: '16px',
   borderRadius: '8px',
-  border: '1px solid #e0e0e0',
+  boxShadow: 'none',
+  border: '1px solid #E8E8E8'
 });
 
 const IconWrapper = styled('div')({
   marginRight: '16px',
-  fontSize: '40px',
+  background: '#F2F2F2',
+  borderRadius: '8px',
+  padding: '8px',
   color: '#000',
 });
 
@@ -37,10 +40,10 @@ const LabelText = styled(Typography)({
 
 const InfoSection = () => {
   const data = [
-    { value: '23,5000', label: 'Total Value of Missions', icon: <CurrencyRupeeIcon /> },
+    { value: '2,35,000', label: 'Total Value of Missions', icon: <CurrencyRupeeIcon /> },
     { value: '134', label: 'No. of Transactions', icon: <DescriptionIcon /> },
     { value: '134', label: 'Total Amount Claimed', icon: <InboxIcon /> },
-    { value: '23,5000', label: 'No. of Job leads', icon: <GiftIcon /> },
+    { value: '2,35,000', label: 'No. of Job leads', icon: <GiftIcon /> },
     { value: '12', label: 'Missions Applications', icon: <PersonIcon /> },
     { value: '12', label: 'Missions Submissions', icon: <DescriptionIcon /> },
     { value: '12', label: 'Giveaway Applications', icon: <GiftIcon /> },
