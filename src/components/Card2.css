@@ -1,0 +1,101 @@
+.card2-container {
+  width: 250px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card2-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #5F6368;
+}
+
+.time-select {
+  font-size: 12px;
+  padding: 2px;
+  min-width: 80px;
+}
+
+.total-text {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 10px 0;
+  color: #202124;
+}
+
+.donut-chart {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.donut {
+  width: 120px;
+  height: 120px;
+}
+
+.donut-hole {
+  fill: #fff;
+}
+
+.donut-ring {
+  fill: transparent;
+  stroke: #e6e6e6;
+  stroke-width: 3;
+}
+
+.donut-segment {
+  fill: transparent;
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.6s;
+}
+
+.branded-segment {
+  stroke: #FBBC04;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.legend-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.branded-dot {
+  background-color: #FBBC04;
+}
+
+.non-branded-dot {
+  background-color: #1A73E8;
+}
+
+.percentage {
+  font-weight: 600;
+}
+.card2-body {
+  display: flex;
+align-items: center;
+justify-content: space-around;
+}

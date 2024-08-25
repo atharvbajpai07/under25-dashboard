@@ -1,0 +1,13 @@
+/* MultiProgressBar.css */
+.multi-progress-bar {
+  display: flex;
+  height: 16px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #e0e0e0; /* Background color for empty progress */
+}
+
+.progress-segment {
+  height: 100%;
+}

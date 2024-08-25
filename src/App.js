@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Opportunities from './pages/Opportunities/Opportunities';
+import AssignedToMe from './pages/AssignedToMe/AssignedToMe';
+import Sidebar from './components/Sidebar';
+import Header from './components/Header';
+import './App.css';  // Import global CSS
 
 function App() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app-container">
+        <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
+        <div className={`main-content ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
+          <Header isSidebarOpen={isSidebarOpen} />
+          <div className="content">
+            <Routes>
+              <Route exact path="/" element={<Dashboard />} />
+              <Route path="/opportunities" element={<Opportunities />} />
+              <Route path="/assigned-to-me" element={<AssignedToMe />} />
+            </Routes>
+          </div>
+        </div>
+      </div>
+    </Router>
   );
 }
 
