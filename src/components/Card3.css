@@ -45,6 +45,7 @@
 
 .donut-hole {
   fill: #fff;
+  
 }
 
 .donut-ring {
@@ -56,20 +57,26 @@
 .donut-segment {
   fill: transparent;
   stroke-width: 3;
-  stroke-linecap: round;
+  /* stroke-linecap: round; */
   transition: stroke-dasharray 0.6s;
 }
 
 .started-segment {
-  stroke: #4285F4;
+  stroke: #334BFF;
+  stroke-width: 8;
+
 }
 
 .evaluating-segment {
-  stroke: #FBBC05;
+  stroke: #FD904B;
+  stroke-width: 8;
+
 }
 
 .completed-segment {
-  stroke: #34A853;
+  stroke: #67AB75;
+  stroke-width: 8;
+
 }
 
 .legend {
@@ -93,15 +100,15 @@
 }
 
 .started-dot {
-  background-color: #4285F4;
+  background-color: #334BFF;
 }
 
 .evaluating-dot {
-  background-color: #FBBC05;
+  background-color: #FD904B;
 }
 
 .completed-dot {
-  background-color: #34A853;
+  background-color: #67AB75;
 }
 
 .percentage {

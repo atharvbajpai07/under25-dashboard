@@ -21,15 +21,17 @@ function Header() {
     return (
       <div className="right-content">
         {location.pathname !== '/' && (
-          <Button variant="contained" color="primary">
-            + Create Mission
-          </Button>
+    
+             <Button variant="contained" style={{ backgroundColor: 'black', color: 'white', borderRadius: "10px" }}>
+                        + Create Mission
+
+           </Button>
         )}
         <div className="user-details">
           <p>Welcome,</p>
-          <h3>John Doe</h3>
+          <h3>John Smith</h3>
         </div>
-        <img src={UserAvatar} alt="Under25 Logo" />
+        <img src={UserAvatar} alt="Under25 Logo" className='user-avatar' />
         </div>
     );
   };

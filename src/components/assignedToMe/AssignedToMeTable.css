@@ -1,0 +1,23 @@
+
+.AssignedToMeTable-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+  }
+  .AssignedToMeTable-title{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: space-evenly;
+  }
+  .icon-button{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+
+  }
+  .icon-image{
+    width: 20px;
+    height: 20px;
+  }

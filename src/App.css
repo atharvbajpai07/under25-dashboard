@@ -55,3 +55,6 @@
   overflow-y: auto;
   transition: padding-left 0.3s;
 }
+h1, h2, h3, h4, h5, h6, p, span, button, a, li, div, input, textarea, label {
+  font-family: 'Oskari G2', sans-serif;
+}

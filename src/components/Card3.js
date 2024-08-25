@@ -14,7 +14,7 @@ const Card3 = ({total = 6400, startedPercentage = 60, evaluatingPercentage = 20,
                 </Select>
             </div>
             <Typography variant="h4" className="total-text">
-                {(total / 1000).toFixed(1)} K Total
+                {(total / 1000).toFixed(1)} K 
             </Typography>
             <div className="card3-body">
                 <div className="donut-chart">
@@ -29,8 +29,8 @@ const Card3 = ({total = 6400, startedPercentage = 60, evaluatingPercentage = 20,
                             cy="21"
                             r="15.915"
                             fill="transparent"
-                            stroke="#4285F4"
-                            strokeWidth="10"
+                            stroke="#334BFF"
+                            strokeWidth="8"
                             strokeDasharray={`${startedPercentage} ${100 - startedPercentage}`}
                             strokeDashoffset="25"
                         ></circle>
@@ -40,8 +40,8 @@ const Card3 = ({total = 6400, startedPercentage = 60, evaluatingPercentage = 20,
                             cy="21"
                             r="15.915"
                             fill="transparent"
-                            stroke="#FBBC05"
-                            strokeWidth="3"
+                            stroke="#FD904B"
+                            strokeWidth="8"
                             strokeDasharray={`${evaluatingPercentage} ${100 - evaluatingPercentage}`}
                             strokeDashoffset={25 - startedPercentage}
                         ></circle>
@@ -51,8 +51,8 @@ const Card3 = ({total = 6400, startedPercentage = 60, evaluatingPercentage = 20,
                             cy="21"
                             r="15.915"
                             fill="transparent"
-                            stroke="#34A853"
-                            strokeWidth="3"
+                            stroke="#67AB75"
+                            strokeWidth="8"
                             strokeDasharray={`${completedPercentage} ${100 - completedPercentage}`}
                             strokeDashoffset={25 - startedPercentage - evaluatingPercentage}
                         ></circle>

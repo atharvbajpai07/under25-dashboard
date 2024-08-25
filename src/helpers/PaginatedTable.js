@@ -17,8 +17,8 @@ const PaginatedTable = ({ totalItems }) => {
   };
 
   return (
-    <Box display="flex" justifyContent="space-between" alignItems="center" mt={2}>
-      <Grid container alignItems="center" spacing={1}>
+    <Box display="flex" justifyContent="space-between" alignItems="center" mt={2} flexWrap="nowrap"  paddingRight='20px'>
+      <Grid container alignItems="center" spacing={1} sx={{ flexWrap: 'nowrap', width: "20vw", height:'10vh',paddingLeft:'20px' }}>
         <Grid item>
           <Typography>Show</Typography>
         </Grid>
@@ -28,7 +28,7 @@ const PaginatedTable = ({ totalItems }) => {
               value={itemsPerPage}
               onChange={handleItemsPerPageChange}
               displayEmpty
-              sx={{ minWidth: 60, height: 30, fontSize: '0.875rem', backgroundColor: '#f0f0f0' }}
+              sx={{ minWidth: 30, height: 30, fontSize: '0.875rem', backgroundColor: '#f0f0f0' }}
             >
               <MenuItem value={10}>10</MenuItem>
               <MenuItem value={20}>20</MenuItem>
